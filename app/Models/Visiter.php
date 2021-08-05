@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Musee extends Model
+class Visiter extends Model
 {
     use HasFactory;
 
@@ -21,14 +21,14 @@ class Musee extends Model
      *
      * @var string
      */
-    protected $primaryKey = 'numMus';
+    protected $primaryKey =[ 'numMus','jour'];
 
      /**
      * The "type" of the primary key ID.
      *
      * @var string
      */
-    protected $keyType = 'integer';
+    protected $keyType = '';
 
     /**
      * Indicates if the IDs are auto-incrementing.
